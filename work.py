@@ -17,7 +17,7 @@ def split_title(s:str):
     i = s.find("#")
     if i == -1:
         return None, s
-    return s[:i], s[i+2:]
+    return s[:i], s[i+1:]
 
 def solve(root:str, p:int, writer:PdfWriter, parent=None):
     file_lists = os.listdir(root)
